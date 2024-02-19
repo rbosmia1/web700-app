@@ -195,7 +195,7 @@ function addStudent(studentData) {
 
 
 function getCourseById(id) {
-  return Course.findOne({ where: { courseId: id } })
+  return Course.findOne({ where: { courseId: ids } })
     .then((course) => {
       if (!course) {
         throw new Error('No results returned');
